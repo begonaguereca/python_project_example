@@ -32,7 +32,7 @@ jobs:
         pip install pytest  
 
     - name: PyTest
-      run: python -m pytest test --junit-xml pytest.xml
+      run: python -m pytest tests --junit-xml pytest.xml
 
     - name: Upload Unit Test Results
       if: always()
